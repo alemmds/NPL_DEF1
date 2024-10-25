@@ -1,0 +1,175 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4caf50; /* Cor verde musgo */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.container {
+    display: flex;
+}
+
+/* Menu Lateral */
+.menu {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+/* Estilo das Seções */
+.section {
+    display: none;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.section h2 {
+    color: #4caf50;
+}
+
+/* Estilos dos Formulários */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Estilos dos Botões de Ação */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.button-edit,
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-edit {
+    background-color: #2196F3;
+}
+
+.button-edit:hover {
+    background-color: #1976D2;
+}
+
+.button-delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Campo de busca */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .menu {
+        width: 100%;
+    }
+}
