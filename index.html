@@ -29,14 +29,32 @@
             <form id="maquinaForm">
                 <label for="nome">Nome da Máquina:</label>
                 <input type="text" name="nome" id="nome" required>
+                
                 <label for="serie">Série:</label>
                 <input type="text" name="serie" id="serie" required>
+                
                 <label for="anosDeUso">Anos de Uso:</label>
                 <input type="number" name="anosDeUso" id="anosDeUso" required>
+                
                 <label for="horasTrabalhadas">Horas Trabalhadas:</label>
                 <input type="number" name="horasTrabalhadas" id="horasTrabalhadas" required>
+                
                 <label for="horimetro">Horímetro:</label>
                 <input type="number" name="horimetro" id="horimetro" required>
+                
+                <!-- Novos campos adicionados -->
+                <label for="receita">Receita:</label>
+                <input type="text" name="receita" id="receita">
+                
+                <label for="despesas">Despesas:</label>
+                <input type="number" name="despesas" id="despesas" step="0.01">
+                
+                <label for="planoDeManutencao">Plano de Manutenção:</label>
+                <input type="text" name="planoDeManutencao" id="planoDeManutencao">
+                
+                <label for="producao">Produção:</label>
+                <input type="text" name="producao" id="producao">
+                
                 <button type="submit">Adicionar Máquina</button>
             </form>
 
@@ -55,6 +73,10 @@
                         <th>Anos de Uso</th>
                         <th>Horas Trabalhadas</th>
                         <th>Horímetro</th>
+                        <th>Receita</th>
+                        <th>Despesas</th>
+                        <th>Plano de Manutenção</th>
+                        <th>Produção</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -68,12 +90,16 @@
             <form id="contaForm">
                 <label for="tipo">Tipo de Conta:</label>
                 <input type="text" name="tipo" id="tipo" required>
+                
                 <label for="dataEmissao">Data de Emissão:</label>
                 <input type="date" name="dataEmissao" id="dataEmissao" required>
+                
                 <label for="dataVencimento">Data de Vencimento:</label>
                 <input type="date" name="dataVencimento" id="dataVencimento" required>
+                
                 <label for="valor">Valor:</label>
                 <input type="number" name="valor" id="valor" required>
+                
                 <button type="submit">Adicionar Conta</button>
             </form>
 
@@ -102,17 +128,22 @@
             <form id="recebimentoForm">
                 <label for="empresa">Empresa:</label>
                 <input type="text" name="empresa" id="empresa" required>
+                
                 <label for="valor">Valor:</label>
                 <input type="number" name="valor" id="valor" required>
+                
                 <label for="dataInicio">Data de Início:</label>
                 <input type="date" name="dataInicio" id="dataInicio" required>
+                
                 <label for="dataVencimento">Data de Vencimento:</label>
                 <input type="date" name="dataVencimento" id="dataVencimento" required>
+                
                 <label for="status">Status:</label>
                 <select name="status" id="status" required>
                     <option value="pago">Pago</option>
                     <option value="aVencer">A Vencer</option>
                 </select>
+                
                 <button type="submit">Adicionar Recebimento</button>
             </form>
 
@@ -142,20 +173,28 @@
             <form id="contratoForm">
                 <label for="empresa">Empresa:</label>
                 <input type="text" name="empresa" id="empresa" required>
+                
                 <label for="dataInicio">Data de Início:</label>
                 <input type="date" name="dataInicio" id="dataInicio" required>
+                
                 <label for="dataVencimento">Data de Vencimento:</label>
                 <input type="date" name="dataVencimento" id="dataVencimento" required>
+                
                 <label for="valor">Valor:</label>
                 <input type="number" name="valor" id="valor" required>
+                
                 <label for="clausulas">Cláusulas:</label>
                 <textarea name="clausulas" id="clausulas" required></textarea>
+                
                 <label for="contratante">Nome do Contratante:</label>
                 <input type="text" name="contratante" id="contratante" required>
+                
                 <label for="maquina">Máquina:</label>
                 <input type="text" name="maquina" id="maquina" required>
+                
                 <label for="operador">Operador:</label>
                 <input type="text" name="operador" id="operador" required>
+                
                 <button type="submit">Adicionar Contrato</button>
             </form>
 
@@ -172,7 +211,7 @@
                         <th>Data de Vencimento</th>
                         <th>Valor</th>
                         <th>Cláusulas</th>
-                        <th>Nome do Contratante</th>
+                        <th>Contratante</th>
                         <th>Máquina</th>
                         <th>Operador</th>
                         <th>Ações</th>
@@ -186,19 +225,24 @@
         <section id="empresaSection" class="section">
             <h2>Gerenciamento de Empresas</h2>
             <form id="empresaForm">
-                <label for="nome">Nome da Empresa:</label>
-                <input type="text" name="nome" id="nome" required>
+                <label for="nomeEmpresa">Nome da Empresa:</label>
+                <input type="text" name="nomeEmpresa" id="nomeEmpresa" required>
+
                 <label for="cnpj">CNPJ:</label>
                 <input type="text" name="cnpj" id="cnpj" required>
-                <label for="areaAtuacao">Área de Atuação:</label>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" required>
+
                 <label for="areaAtuacao">Área de Atuação:</label>
                 <input type="text" name="areaAtuacao" id="areaAtuacao" required>
+
                 <label for="representante">Representante:</label>
                 <input type="text" name="representante" id="representante" required>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone" id="telefone" required>
+
                 <label for="email">E-mail:</label>
                 <input type="email" name="email" id="email" required>
+
                 <button type="submit">Adicionar Empresa</button>
             </form>
 
@@ -212,9 +256,9 @@
                     <tr>
                         <th>Nome</th>
                         <th>CNPJ</th>
+                        <th>Endereço</th>
                         <th>Área de Atuação</th>
                         <th>Representante</th>
-                        <th>Telefone</th>
                         <th>E-mail</th>
                         <th>Ações</th>
                     </tr>
